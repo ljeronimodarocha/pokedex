@@ -4,6 +4,7 @@ import { PokerHeaderComponent } from './poker-header/poker-header.component';
 import { PokeSearchComponent } from './poke-search/poke-search.component';
 import { PokeListComponent } from './poke-list/poke-list.component';
 import { RouterModule } from '@angular/router';
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 
 
 
@@ -11,16 +12,19 @@ import { RouterModule } from '@angular/router';
   declarations: [
     PokerHeaderComponent,
     PokeSearchComponent,
-    PokeListComponent
+    PokeListComponent,
+    
   ],
   exports: [
     PokerHeaderComponent,
     PokeSearchComponent,
-    PokeListComponent
+    PokeListComponent,
+    
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    InfiniteScrollModule
   ]
   
 })
